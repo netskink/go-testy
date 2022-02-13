@@ -18,4 +18,10 @@ in a directory, you can do this to open the project in vs code
 code .
 ```
 
+# install the cloud academy demo git
+
+```
+https://github.com/cloudacademy/godemo.git
+```
+
 
