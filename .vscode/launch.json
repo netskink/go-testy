@@ -5,11 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch file",
+            "name": "string-testy",
             "type": "go",
             "request": "launch",
             "mode": "debug",
-            "program": "${file}"
+            "program": "string-testy/string-testy.go"
+        },
+        {
+            "name": "struct-testy",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "struct-testy/testy.go"
         },
  
        

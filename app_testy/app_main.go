@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+import "app_testy/app_globals"
 
 func main() {
 	fmt.Println("hello from go")
