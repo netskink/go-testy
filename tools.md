@@ -91,6 +91,14 @@ see all of the dependencies that the current project is configured with. This wi
 go list -m all
 ```
 
+List standard libraries
+
+```
+go list std
+```
+
+
+
 ## go mod
 
 ```
@@ -162,3 +170,10 @@ The "go vet" command is used to perform a static analysis across your source cod
 ```
 go vet ./..
 ```
+
+## golin
+
+TODO
+
+
+

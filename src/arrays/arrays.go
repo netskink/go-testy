@@ -5,8 +5,7 @@ import (
 	"fmt"
 )
 
-// arrays hold all the same type of variable
-// and are unmutable
+// arrays hold all the same type of variable and are unmutable
 func main() { 
 
 	// variable array of five ints
