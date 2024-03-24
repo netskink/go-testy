@@ -9,6 +9,7 @@ import (
     "log"
     "context"
     "os"
+//    "encoding/json"   // json.MarshalIndent()
 )
 
 func main() {
@@ -27,9 +28,34 @@ func main() {
     if err != nil {
       log.Fatal(err)
     }
-    fmt.Println("resp: ", resp)
-    fmt.Println("*resp: ", *resp)
-    //fmt.Println("resp[0]: ", *resp[0])
-    //fmt.Println("resp[1]: ", *resp[1])
-    fmt.Println("resp.feedback: ", resp{1})
+
+    // Sometimes, this returns a result:
+    // 2024/03/24 09:49:24 blocked: candidate: FinishReasonSafety
+
+    // https://pkg.go.dev/github.com/google/generative-ai-go/genai#GenerateContentResponse
+
+    //it := genai.GenerateContentResponseIterator(resp)
+    //it := genai.GenerateContentResponseIterator(resp)
+    //it := client.GenerateContentResponseIterator(resp)
+    //it := genai.client.GenerateContentResponseIterator(resp)
+
+    //for it.HasNext() {
+    //    res := it.Next()
+    //    fmt.Println(res)
+    //}
+
+    // https://eli.thegreenplace.net/2023/using-gemini-models-from-go/
+    //bs, _ := json.MarshalIndent(resp, "", "    ")
+    //fmt.Println(string(bs))
+
+    // Grab the specific text result
+    //fmt.Println(resp.Candidates)
+    fmt.Println(resp.Candidates[0].Content.Parts)
+
 }
+
+
+
+
+
+
